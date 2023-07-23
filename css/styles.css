@@ -1,386 +1,329 @@
 @font-face {
-    font-family: "Pacifico";
-    src: url(../fonts/Pacifico-Regular.ttf) format("truetype");
+  font-family: "Pacifico";
+  src: url(../fonts/Pacifico-Regular.ttf) format("truetype");
 }
-
 * {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
 
-/*CSS NAV*/
-nav{
-    background-color: white;
-    border-bottom: 2px solid #80C58D;
-    margin: 1.5%;
+nav {
+  background-color: white;
+  border-bottom: 2px solid #80C58D;
+  margin: 1.5%;
 }
-
-.navbar-brand {
-    width: 30%;
+nav .navbar-brand {
+  width: 30%;
 }
-
-.logo {
-    width: 100%;
+nav .navbar-brand .logo {
+  width: 100%;
 }
-
-.navbar-toggler {
-    color: #80C58D;
+nav .navbar-toggler {
+  color: #80C58D;
 }
-
-.nav-link {
-    color: #BD81A0;
-    font-size: x-large;
-    text-align: end;
-    font-family: 'Pacifico', cursive;
+nav .nav-link {
+  color: #BD81A0;
+  font-size: x-large;
+  text-align: end;
+  font-family: "Pacifico", cursive;
 }
 
 @media (min-width: 640px) {
-    .navbar-brand {
-        width: 25%;
-    }
-
-    .navbar-toggler {
-        width: 80px;
-        height: 80px;
-    }
+  .navbar-brand {
+    width: 25%;
+  }
+  .navbar-toggler {
+    width: 80px;
+    height: 80px;
+  }
 }
-
 @media (min-width: 992px) {
-    .container-fluid {
-        display: grid!Important;
-        grid-template-columns: 1fr 4fr;
-    }
-
-    .navbar-brand {
-        width: 85%;
-    }
-
-    .navbar-nav {
-        display: grid!Important;
-        width: 100%;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        justify-items: center;
-        align-items: center;
-        font-size: xx-large;
-        font-family: 'Pacifico', cursive;
-        text-align: center;
-
-    }
-    
-    .nav-link {
-        color: #BD81A0;
-    }
-}
-
-/*CSS MAIN INICIO*/
-/*CSS NUESTROS PRODUCTOS*/
-h1, h2, .titulo{
-    font-family: 'Pacifico', cursive;
-    color: #BD81A0;
-    display: flex;
-    justify-content: center;
-    margin: 20px;
-}
-
-.seccionInicio{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.producto{
-    background-size: cover;
-    width: 200px;
-    height: 200px;
-    margin: 10px;
-}
-
-.producto a{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  .container-fluid {
+    display: grid !important;
+    grid-template-columns: 1fr 4fr;
+  }
+  .container-fluid .navbar-brand {
+    width: 85%;
+  }
+  .container-fluid .navbar-nav {
+    display: grid !important;
     width: 100%;
-    height: 100%;
-    opacity: 0;
-    text-decoration: none;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    font-size: xx-large;
+    font-family: "Pacifico", cursive;
+    text-align: center;
+  }
+  .container-fluid .navbar-nav .nav-link {
     color: #BD81A0;
-    font-family: 'Pacifico', cursive;
-    font-size: large;
+  }
+}
+h1, h2, .titulo {
+  font-family: "Pacifico", cursive;
+  color: #BD81A0;
+  display: flex;
+  justify-content: center;
+  margin: 20px;
 }
 
-.producto:hover{
-    background-image: none;
+.seccionInicio {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
-
-.producto a:hover {
-    opacity: 1;
+.seccionInicio .producto {
+  background-size: cover;
+  width: 200px;
+  height: 200px;
+  margin: 10px;
 }
-
-.tortas{
-    background-image: url(../images/torta.jpg);
+.seccionInicio .producto:hover {
+  background-image: none;
 }
-
-.macarrons{
-    background-image: url(../images/macarron.jfif);
+.seccionInicio .producto a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  text-decoration: none;
+  color: #BD81A0;
+  font-family: "Pacifico", cursive;
+  font-size: large;
 }
-
-.cookies{
-    background-image: url(../images/cookies.jfif);
+.seccionInicio .producto a:hover {
+  opacity: 1;
 }
-
-.alfajores{
-    background-image: url(../images/alfajores.jfif);
+.seccionInicio .tortas {
+  background-image: url(../images/torta.jpg);
 }
-
-.petitsFours{
-    background-image: url(../images/petitsFours.jfif);
+.seccionInicio .macarrons {
+  background-image: url(../images/macarron.jfif);
+}
+.seccionInicio .cookies {
+  background-image: url(../images/cookies.jfif);
+}
+.seccionInicio .alfajores {
+  background-image: url(../images/alfajores.jfif);
+}
+.seccionInicio .petitsFours {
+  background-image: url(../images/petitsFours.jfif);
 }
 
 @media (min-width: 1350px) {
-    .producto{
-        width: 230px;
-        height: 230px;
-    }
+  .producto {
+    width: 230px;
+    height: 230px;
+  }
+}
+.opinion {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin: 20px;
+  padding: 15px;
+  height: 100%;
+  width: 250px;
+  border: 1px solid #80C58D;
+  text-align: justify;
+}
+.opinion img {
+  width: 40%;
 }
 
-/*CSS NUESTROS PRODUCTOS*/
-
-.opinion{
-    display: flex;
-    flex-wrap: wrap;
-    margin: 20px;
-    padding: 15px;
-    height: 100%;
-    width: 250px;
-    border: 1px solid #80C58D;
-    text-align: justify;
+.nosotros {
+  display: grid;
+  grid-template-columns: 1fr;
 }
-
-.opinion img{
-    width: 40%;
+.nosotros .evolucionHistorica {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
-
-/*CSS MAIN NOSOTROS*/
-
-.nosotros{
-    display: grid;
-    grid-template-columns: 1fr;
+.nosotros .evolucionHistorica img {
+  width: 300px;
+  height: 300px;
+  margin: 10px;
 }
-
-.evolucionHistorica {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.evolucionHistorica img{
-    width: 300px;
-    height: 300px;
-    margin: 10px;
-}
-
-.historia {
-    text-align: justify;
-    padding: 20px;
-    font-family: 'Pacifico', cursive;
-    color: #BD81A0;
+.nosotros .historia {
+  text-align: justify;
+  padding: 20px;
+  font-family: "Pacifico", cursive;
+  color: #BD81A0;
 }
 
 @media (min-width: 960px) {
-
-    .evolucionHistorica {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
-
-    .evolucionHistorica img{
-        display: flex;
-        align-self: center;
-        justify-self: center;
-        width: 90%;
-        height: 90%;
-    }
+  .evolucionHistorica {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .evolucionHistorica img {
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    width: 90%;
+    height: 90%;
+  }
 }
-
 @media (min-width: 1200px) {
-    .nosotros{
-        display: grid;
-        grid-template-columns: repeat(10, 1fr);
-    }
-
-    .evolucionHistorica {
-        grid-column: 1 / 7;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
-
-    .evolucionHistorica img{
-        display: flex;
-        align-self: center;
-        justify-self: center;
-        width: 90%;
-        height: 85%;
-    }
-    
-    .historia {
-        grid-column: 7 / 11;
-    }
-}
-
-/*CSS MAIN CONTACTO*/
-
-.mainContacto{
-    margin-bottom: 20px;
-}
-
-.mb-3 {
-    padding: 10px;
-    margin-bottom: 0px!Important;
-}
-
-.form-label {
-    font-family: 'Pacifico', cursive;
-    color: #BD81A0;
-}
-
-.form-control {
-    border: 1px solid #80C58D;
-}
-
-.btn {
-    background-color: #80C58D;
-    color: #BD81A0;
-    margin: 10px;
-}
-
-.tituloContacto{
+  .nosotros {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+  }
+  .nosotros .evolucionHistorica {
+    grid-column: 1/7;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .nosotros .evolucionHistorica img {
     display: flex;
-    justify-content: center;
-    font-size: large;
-    color: #BD81A0;
-    font-family: 'Pacifico', cursive;
-    margin: 10px;
+    align-self: center;
+    justify-self: center;
+    width: 90%;
+    height: 85%;
+  }
+  .nosotros .historia {
+    grid-column: 7/11;
+  }
 }
-
-.ubicacionContacto {
-    display: flex;
-    justify-content: center;
+.mainContacto {
+  margin-bottom: 20px;
+}
+.mainContacto .mb-3 {
+  padding: 10px;
+  margin-bottom: 0px !important;
+}
+.mainContacto .mb-3 .form-label {
+  font-family: "Pacifico", cursive;
+  color: #BD81A0;
+}
+.mainContacto .mb-3 .form-control {
+  border: 1px solid #80C58D;
+}
+.mainContacto .btn {
+  background-color: #80C58D;
+  color: #BD81A0;
+  margin: 10px;
+}
+.mainContacto .tituloContacto {
+  display: flex;
+  justify-content: center;
+  font-size: large;
+  color: #BD81A0;
+  font-family: "Pacifico", cursive;
+  margin: 10px;
+}
+.mainContacto .ubicacionContacto {
+  display: flex;
+  justify-content: center;
 }
 
 @media (min-width: 640px) {
-    .mainContacto{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
-
-    .ubicacionContacto iframe{
-        width: 300px;
-        height: 300px;
-    }
+  .mainContacto {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .mainContacto .ubicacionContacto iframe {
+    width: 300px;
+    height: 300px;
+  }
 }
-
 /*CSS FOOTER*/
-footer{
-    background-color: #80C58D;
+footer {
+  background-color: #80C58D;
 }
 
-.seccionFooter{
-    padding: 5px 10px;
-    color: #BD81A0;
-    font-family: 'Pacifico', cursive;
+.seccionFooter {
+  padding: 5px 10px;
+  color: #BD81A0;
+  font-family: "Pacifico", cursive;
 }
 
 .tituloFooter {
-    display: flex;
-    justify-content: center;
-    font-size: large;
-    margin-bottom: 5px;
+  display: flex;
+  justify-content: center;
+  font-size: large;
+  margin-bottom: 5px;
 }
 
-.seccionFooter ul{
-    padding: 5px;
-    list-style: none;
-    font-size: large;
-    margin-bottom: 0px;
+.seccionFooter ul {
+  padding: 5px;
+  list-style: none;
+  font-size: large;
+  margin-bottom: 0px;
 }
 
-.seccionFooter ul li a{
-    display: flex;
-    justify-content: center;
-    color: #BD81A0;
-    text-decoration: none;
+.seccionFooter ul li a {
+  display: flex;
+  justify-content: center;
+  color: #BD81A0;
+  text-decoration: none;
 }
 
-.contacto{
-    margin-bottom: 10px;
+.contacto {
+  margin-bottom: 10px;
 }
 
 .redesSociales, .suscripcionMail, .ubicacion {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .medios-pago {
-    display: grid;
-    justify-content: center;
-    grid-template-columns: repeat(4, 75px);
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(4, 75px);
 }
 
-.medios-pago img{
-    justify-self: center;
-    margin: 2px;
-    height: 45px;
-    width: 70px;
+.medios-pago img {
+  justify-self: center;
+  margin: 2px;
+  height: 45px;
+  width: 70px;
 }
 
 @media (min-width: 640px) {
-    footer{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
-
-    .seccionFooter1 {
-        order: 1;
-    }
-
-    .seccionFooter2 {
-        order: 3;
-    }
-
-    .seccionFooter3 {
-        order: 4;
-    }
-
-    .seccionFooter4 {
-        order: 2;
-    }
-
-    .ubicacion iframe{
-        width: 250px;
-        height: 200px;
-    }
+  footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .seccionFooter1 {
+    order: 1;
+  }
+  .seccionFooter2 {
+    order: 3;
+  }
+  .seccionFooter3 {
+    order: 4;
+  }
+  .seccionFooter4 {
+    order: 2;
+  }
+  .ubicacion iframe {
+    width: 250px;
+    height: 200px;
+  }
 }
-
 @media (min-width: 1200px) {
-    footer{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-    }
-
-    .seccionFooter1 {
-        order: 1;
-    }
-
-    .seccionFooter2 {
-        order: 2;
-    }
-
-    .seccionFooter3 {
-        order: 3;
-    }
-
-    .seccionFooter4 {
-        order: 4;
-    }
+  footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  .seccionFooter1 {
+    order: 1;
+  }
+  .seccionFooter2 {
+    order: 2;
+  }
+  .seccionFooter3 {
+    order: 3;
+  }
+  .seccionFooter4 {
+    order: 4;
+  }
 }
+
+/*# sourceMappingURL=styles.css.map */

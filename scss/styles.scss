@@ -1,0 +1,113 @@
+@import "reset";
+@import "variables";
+@import "nav";
+@import "mainGeneral";
+@import "mainIndex_seccionNuestrosProductos";
+@import "mainIndex_seccionOpiniones";
+@import "mainNosotros";
+@import "mainContacto";
+
+/*CSS FOOTER*/
+footer{
+    background-color: #80C58D;
+}
+
+.seccionFooter{
+    padding: 5px 10px;
+    color: $color-primary;
+    font-family: 'Pacifico', cursive;
+}
+
+.tituloFooter {
+    display: flex;
+    justify-content: center;
+    font-size: large;
+    margin-bottom: 5px;
+}
+
+.seccionFooter ul{
+    padding: 5px;
+    list-style: none;
+    font-size: large;
+    margin-bottom: 0px;
+}
+
+.seccionFooter ul li a{
+    display: flex;
+    justify-content: center;
+    color: $color-primary;
+    text-decoration: none;
+}
+
+.contacto{
+    margin-bottom: 10px;
+}
+
+.redesSociales, .suscripcionMail, .ubicacion {
+    display: flex;
+    justify-content: center;
+}
+
+.medios-pago {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(4, 75px);
+}
+
+.medios-pago img{
+    justify-self: center;
+    margin: 2px;
+    height: 45px;
+    width: 70px;
+}
+
+@media (min-width: 640px) {
+    footer{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .seccionFooter1 {
+        order: 1;
+    }
+
+    .seccionFooter2 {
+        order: 3;
+    }
+
+    .seccionFooter3 {
+        order: 4;
+    }
+
+    .seccionFooter4 {
+        order: 2;
+    }
+
+    .ubicacion iframe{
+        width: 250px;
+        height: 200px;
+    }
+}
+
+@media (min-width: 1200px) {
+    footer{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    .seccionFooter1 {
+        order: 1;
+    }
+
+    .seccionFooter2 {
+        order: 2;
+    }
+
+    .seccionFooter3 {
+        order: 3;
+    }
+
+    .seccionFooter4 {
+        order: 4;
+    }
+}
