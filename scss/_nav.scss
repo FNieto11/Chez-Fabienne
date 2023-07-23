@@ -15,7 +15,7 @@ nav{
         color: $color-primary;
         font-size: x-large;
         text-align: end;
-        font-family: 'Pacifico', cursive;
+        font-family: $font-page;
     }
 }
 
@@ -43,7 +43,7 @@ nav{
             justify-items: center;
             align-items: center;
             font-size: xx-large;
-            font-family: 'Pacifico', cursive;
+            font-family: $font-page;
             text-align: center;
             .nav-link {
                 color: $color-primary;

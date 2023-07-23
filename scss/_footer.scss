@@ -3,7 +3,7 @@ footer{
     .seccionFooter{
         padding: 5px 10px;
         color: $color-primary;
-        font-family: 'Pacifico', cursive;
+        font-family: $font-page;
         .tituloFooter {
             display: flex;
             justify-content: center;

@@ -120,6 +120,8 @@ h1, h2, .titulo {
   }
 }
 .opinion {
+  font-family: "Pacifico", cursive;
+  color: #BD81A0;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -231,40 +233,45 @@ h1, h2, .titulo {
     height: 300px;
   }
 }
-/*CSS FOOTER*/
 footer {
   background-color: #80C58D;
 }
-
-.seccionFooter {
+footer .seccionFooter {
   padding: 5px 10px;
   color: #BD81A0;
   font-family: "Pacifico", cursive;
 }
-
-.tituloFooter {
+footer .seccionFooter .tituloFooter {
   display: flex;
   justify-content: center;
   font-size: large;
   margin-bottom: 5px;
 }
-
-.seccionFooter ul {
+footer .seccionFooter ul {
   padding: 5px;
   list-style: none;
   font-size: large;
   margin-bottom: 0px;
 }
-
-.seccionFooter ul li a {
+footer .seccionFooter ul li a {
   display: flex;
   justify-content: center;
   color: #BD81A0;
   text-decoration: none;
 }
-
-.contacto {
+footer .seccionFooter .contacto {
   margin-bottom: 10px;
+}
+footer .seccionFooter .medios-pago {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(4, 75px);
+}
+footer .seccionFooter .medios-pago img {
+  justify-self: center;
+  margin: 2px;
+  height: 45px;
+  width: 70px;
 }
 
 .redesSociales, .suscripcionMail, .ubicacion {
@@ -272,37 +279,24 @@ footer {
   justify-content: center;
 }
 
-.medios-pago {
-  display: grid;
-  justify-content: center;
-  grid-template-columns: repeat(4, 75px);
-}
-
-.medios-pago img {
-  justify-self: center;
-  margin: 2px;
-  height: 45px;
-  width: 70px;
-}
-
 @media (min-width: 640px) {
   footer {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
-  .seccionFooter1 {
+  footer .seccionFooter1 {
     order: 1;
   }
-  .seccionFooter2 {
+  footer .seccionFooter2 {
     order: 3;
   }
-  .seccionFooter3 {
+  footer .seccionFooter3 {
     order: 4;
   }
-  .seccionFooter4 {
+  footer .seccionFooter4 {
     order: 2;
   }
-  .ubicacion iframe {
+  footer .seccionFooter4 .ubicacion iframe {
     width: 250px;
     height: 200px;
   }
@@ -312,16 +306,16 @@ footer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
-  .seccionFooter1 {
+  footer .seccionFooter1 {
     order: 1;
   }
-  .seccionFooter2 {
+  footer .seccionFooter2 {
     order: 2;
   }
-  .seccionFooter3 {
+  footer .seccionFooter3 {
     order: 3;
   }
-  .seccionFooter4 {
+  footer .seccionFooter4 {
     order: 4;
   }
 }

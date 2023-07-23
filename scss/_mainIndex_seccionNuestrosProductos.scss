@@ -19,7 +19,7 @@
             opacity: 0;
             text-decoration: none;
             color: $color-primary;
-            font-family: 'Pacifico', cursive;
+            font-family: $font-page;
             font-size: large;
             &:hover {
                 opacity: 1;
