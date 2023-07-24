@@ -1,0 +1,47 @@
+.carousel-item{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card{
+    margin: 10px;
+    margin-bottom: 30px;
+    padding: 10px;
+    width: 300px;
+    border: 2px solid $color-secundary;
+    color: $color-primary;
+    display: flex;
+    flex-direction: column;
+    img{
+        height: 280px;
+        margin-bottom: 5px;
+    }
+    h4, p{
+        margin-bottom: 5px;
+        font-family: $font-page;
+    }
+    .compra{
+        margin: 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        align-items: center;
+        .precio{
+            display: flex;
+            align-items: center;
+            margin:0;
+            font-size: 25px;
+            text-decoration: dotted;
+            font-family: $font-page;
+        }
+        .btnCard {
+            background-color: $color-secundary;
+            color: $color-primary;
+            font-family: $font-page;
+            border: none;
+            height: 40px;
+            width: 80px;
+            border-radius: 10px;
+        }
+    }
+}
