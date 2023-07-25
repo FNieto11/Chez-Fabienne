@@ -321,37 +321,65 @@ footer .seccionFooter .medios-pago img {
     height: 300px;
   }
 }
-.carousel-item {
-  display: flex;
-  flex-wrap: wrap;
+.carousel-control-prev, .carousel-control-next {
+  margin: 10px 0px 30px;
+  height: 350px;
+  width: 50px;
 }
 
-.card {
+.cards-wrapper {
+  display: flex;
+  justify-content: center;
+}
+.cards-wrapper .card {
   margin: 10px;
   margin-bottom: 30px;
   padding: 10px;
   width: 300px;
+  height: 350px;
   border: 2px solid #80C58D;
   color: #BD81A0;
+}
+.cards-wrapper .card .descripcionTarjeta {
+  position: absolute;
+  top: 18px;
+  left: 18px;
+  height: 260px;
+  width: 260px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
-.card img {
-  height: 280px;
-  margin-bottom: 5px;
-}
-.card h4, .card p {
-  margin-bottom: 5px;
+.cards-wrapper .card .descripcionTarjeta h4, .cards-wrapper .card .descripcionTarjeta p {
   font-family: "Pacifico", cursive;
 }
-.card .compra {
+.cards-wrapper .card .imagenTarjeta {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  height: 276px;
+  width: 276px;
+}
+.cards-wrapper .card .imagenTarjeta:hover {
+  opacity: 0.3;
+}
+.cards-wrapper .card .imagenTarjeta img {
+  height: 100%;
+  width: 100%;
+}
+.cards-wrapper .card .compra {
+  position: absolute;
+  top: 296px;
   margin: 0;
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-items: center;
   align-items: center;
+  width: 276px;
 }
-.card .compra .precio {
+.cards-wrapper .card .compra .precio {
   display: flex;
   align-items: center;
   margin: 0;
@@ -359,7 +387,7 @@ footer .seccionFooter .medios-pago img {
   text-decoration: dotted;
   font-family: "Pacifico", cursive;
 }
-.card .compra .btnCard {
+.cards-wrapper .card .compra .btnCard {
   background-color: #80C58D;
   color: #BD81A0;
   font-family: "Pacifico", cursive;
@@ -367,6 +395,32 @@ footer .seccionFooter .medios-pago img {
   height: 40px;
   width: 80px;
   border-radius: 10px;
+  opacity: 0.8;
+}
+
+@media (max-width: 723px) {
+  .carrusel1 {
+    display: none;
+  }
+  .carrusel2 {
+    display: none;
+  }
+}
+@media (min-width: 724px) and (max-width: 1024px) {
+  .carrusel1 {
+    display: none;
+  }
+  .carrusel3 {
+    display: none;
+  }
+}
+@media (min-width: 1024px) {
+  .carrusel2 {
+    display: none;
+  }
+  .carrusel3 {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
