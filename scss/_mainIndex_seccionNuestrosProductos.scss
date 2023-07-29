@@ -1,11 +1,12 @@
 .seccionInicio{
     display: flex;
     flex-wrap: wrap;
+    gap: 10px;
     justify-content: center;
     .producto{
         background-size: cover;
-        width: 200px;
-        height: 200px;
+        width: 250px;
+        height: 250px;
         margin: 10px;
         &:hover{
             background-image: none;
@@ -36,18 +37,7 @@
         background-image: url(../images/cookies.jfif);
         text-align: center;
     }
-    .alfajores{
-        display: none;
-        background-image: url(../images/alfajores.jfif);
-    }
     .petitsFours{
         background-image: url(../images/petitsFours.jfif);
-    }
-}
-
-@media (min-width: 1350px) {
-    .producto{
-        width: 230px;
-        height: 230px;
     }
 }

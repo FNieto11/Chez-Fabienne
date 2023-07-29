@@ -71,12 +71,13 @@ h1, h2, .titulo, .tituloProducto {
 .seccionInicio {
   display: flex;
   flex-wrap: wrap;
+  gap: 10px;
   justify-content: center;
 }
 .seccionInicio .producto {
   background-size: cover;
-  width: 200px;
-  height: 200px;
+  width: 250px;
+  height: 250px;
   margin: 10px;
 }
 .seccionInicio .producto:hover {
@@ -107,20 +108,10 @@ h1, h2, .titulo, .tituloProducto {
   background-image: url(../images/cookies.jfif);
   text-align: center;
 }
-.seccionInicio .alfajores {
-  display: none;
-  background-image: url(../images/alfajores.jfif);
-}
 .seccionInicio .petitsFours {
   background-image: url(../images/petitsFours.jfif);
 }
 
-@media (min-width: 1350px) {
-  .producto {
-    width: 230px;
-    height: 230px;
-  }
-}
 .opinion {
   font-family: "Pacifico", cursive;
   color: #BD81A0;
