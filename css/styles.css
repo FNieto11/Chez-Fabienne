@@ -159,6 +159,20 @@ footer .seccionFooter ul li a {
 footer .seccionFooter .contacto {
   margin-bottom: 10px;
 }
+footer .seccionFooter input {
+  font-family: "Pacifico", cursive;
+  border-radius: 10px;
+}
+footer .seccionFooter .btnFooter {
+  background-color: #BD81A0;
+  color: #80C58D;
+  font-family: "Pacifico", cursive;
+  border: none;
+  height: 35px;
+  width: 60px;
+  border-radius: 10px;
+  margin-left: 5px;
+}
 footer .seccionFooter .medios-pago {
   display: grid;
   justify-content: center;
@@ -290,6 +304,20 @@ footer .seccionFooter .medios-pago img {
   color: #BD81A0;
   font-family: "Pacifico", cursive;
   margin: 10px;
+}
+.mainContacto input {
+  font-family: "Pacifico", cursive;
+  border-radius: 10px;
+}
+.mainContacto .btnContact {
+  background-color: #80C58D;
+  color: #BD81A0;
+  font-family: "Pacifico", cursive;
+  border: none;
+  height: 40px;
+  width: 60px;
+  border-radius: 5px;
+  margin-left: 5px;
 }
 .mainContacto .tituloContacto {
   display: flex;

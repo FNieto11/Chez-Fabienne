@@ -62,9 +62,7 @@
                 font-family: $font-page;
             }
             .btnCard {
-                background-color: $color-secundary;
-                color: $color-primary;
-                font-family: $font-page;
+                @include boton($color-secundary,$color-primary);
                 border: none;
                 height: 40px;
                 width: 80px;

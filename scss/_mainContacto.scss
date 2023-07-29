@@ -12,10 +12,20 @@
         }
     }
     .btn {
-        background-color: $color-secundary;
-        color: $color-primary;
-        font-family: $font-page;
+        @include boton($color-secundary,$color-primary);
         margin: 10px;
+    }
+    input{
+        font-family: $font-page;
+        border-radius: 10px;
+    }
+    .btnContact{
+        @include boton($color-secundary,$color-primary);
+        border: none;
+        height: 40px;
+        width: 60px;
+        border-radius: 5px;
+        margin-left: 5px;
     }
     .tituloContacto{
         display: flex;

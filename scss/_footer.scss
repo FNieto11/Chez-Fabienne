@@ -26,6 +26,18 @@ footer{
         .contacto{
             margin-bottom: 10px;
         }
+        input{
+            font-family: $font-page;
+            border-radius: 10px;
+        }
+        .btnFooter{
+            @include boton($color-primary,$color-secundary);
+            border: none;
+            height: 35px;
+            width: 60px;
+            border-radius: 10px;
+            margin-left: 5px;
+        }
         .medios-pago {
             display: grid;
             justify-content: center;
