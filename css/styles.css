@@ -100,13 +100,15 @@ h1, h2, .titulo, .tituloProducto {
 .seccionInicio .tortas {
   background-image: url(../images/torta.jpg);
 }
-.seccionInicio .macarrons {
+.seccionInicio .macarons {
   background-image: url(../images/macarron.jfif);
 }
 .seccionInicio .cookies {
   background-image: url(../images/cookies.jfif);
+  text-align: center;
 }
 .seccionInicio .alfajores {
+  display: none;
   background-image: url(../images/alfajores.jfif);
 }
 .seccionInicio .petitsFours {

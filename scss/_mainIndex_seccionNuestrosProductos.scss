@@ -29,13 +29,15 @@
     .tortas{
         background-image: url(../images/torta.jpg);
     }
-    .macarrons{
+    .macarons{
         background-image: url(../images/macarron.jfif);
     }
     .cookies{
         background-image: url(../images/cookies.jfif);
+        text-align: center;
     }
     .alfajores{
+        display: none;
         background-image: url(../images/alfajores.jfif);
     }
     .petitsFours{
