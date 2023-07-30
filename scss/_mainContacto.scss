@@ -28,16 +28,14 @@
         margin-left: 5px;
     }
     .tituloContacto{
-        display: flex;
-        justify-content: center;
+        @extend %flex;
         font-size: large;
         color: $color-primary;
         font-family: 'Pacifico', cursive;
         margin: 10px;
     }
     .ubicacionContacto {
-        display: flex;
-        justify-content: center;
+        @extend %flex;
     }
 }
 

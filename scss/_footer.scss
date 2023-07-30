@@ -6,8 +6,7 @@ footer{
         color: $color-primary;
         font-family: $font-page;
         .tituloFooter {
-            display: flex;
-            justify-content: center;
+            @extend %flex;
             font-size: large;
             margin-bottom: 5px;
         }
@@ -17,8 +16,7 @@ footer{
             font-size: large;
             margin-bottom: 0px;
             li a{
-                display: flex;
-                justify-content: center;
+                @extend %flex;
                 color: $color-primary;
                 text-decoration: none;
             }
@@ -53,8 +51,7 @@ footer{
 }
 
 .redesSociales, .suscripcionMail, .ubicacion {
-    display: flex;
-    justify-content: center;
+    @extend %flex;
 }
 
 @media (min-width: 640px) {

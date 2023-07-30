@@ -8,6 +8,11 @@
   box-sizing: border-box;
 }
 
+.cards-wrapper .card .descripcionTarjeta, .mainContacto .ubicacionContacto, .mainContacto .tituloContacto, .nosotros .evolucionHistorica, .redesSociales, .suscripcionMail, .ubicacion, footer .seccionFooter ul li a, footer .seccionFooter .tituloFooter, .seccionInicio .producto a, .seccionInicio, h1, h2, .titulo, .tituloProducto {
+  display: flex;
+  justify-content: center;
+}
+
 nav {
   background-color: white;
   border-bottom: 2px solid #80C58D;
@@ -63,16 +68,13 @@ nav .nav-link {
 h1, h2, .titulo, .tituloProducto {
   font-family: "Pacifico", cursive;
   color: #BD81A0;
-  display: flex;
-  justify-content: center;
+  text-align: center;
   margin: 20px;
 }
 
 .seccionInicio {
-  display: flex;
   flex-wrap: wrap;
   gap: 10px;
-  justify-content: center;
 }
 .seccionInicio .producto {
   background-size: cover;
@@ -84,8 +86,6 @@ h1, h2, .titulo, .tituloProducto {
   background-image: none;
 }
 .seccionInicio .producto a {
-  display: flex;
-  justify-content: center;
   align-items: center;
   width: 100%;
   height: 100%;
@@ -139,8 +139,6 @@ footer .seccionFooter {
   font-family: "Pacifico", cursive;
 }
 footer .seccionFooter .tituloFooter {
-  display: flex;
-  justify-content: center;
   font-size: large;
   margin-bottom: 5px;
 }
@@ -151,8 +149,6 @@ footer .seccionFooter ul {
   margin-bottom: 0px;
 }
 footer .seccionFooter ul li a {
-  display: flex;
-  justify-content: center;
   color: #BD81A0;
   text-decoration: none;
 }
@@ -183,11 +179,6 @@ footer .seccionFooter .medios-pago img {
   margin: 2px;
   height: 45px;
   width: 70px;
-}
-
-.redesSociales, .suscripcionMail, .ubicacion {
-  display: flex;
-  justify-content: center;
 }
 
 @media (min-width: 640px) {
@@ -235,9 +226,7 @@ footer .seccionFooter .medios-pago img {
   grid-template-columns: 1fr;
 }
 .nosotros .evolucionHistorica {
-  display: flex;
   flex-wrap: wrap;
-  justify-content: center;
 }
 .nosotros .evolucionHistorica img {
   width: 300px;
@@ -320,18 +309,11 @@ footer .seccionFooter .medios-pago img {
   margin-left: 5px;
 }
 .mainContacto .tituloContacto {
-  display: flex;
-  justify-content: center;
   font-size: large;
   color: #BD81A0;
   font-family: "Pacifico", cursive;
   margin: 10px;
 }
-.mainContacto .ubicacionContacto {
-  display: flex;
-  justify-content: center;
-}
-
 @media (min-width: 640px) {
   .mainContacto {
     display: grid;
@@ -367,9 +349,7 @@ footer .seccionFooter .medios-pago img {
   left: 18px;
   height: 260px;
   width: 260px;
-  display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   text-align: center;
 }

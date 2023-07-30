@@ -2,9 +2,8 @@
     display: grid;
     grid-template-columns: 1fr;
     .evolucionHistorica {
-        display: flex;
+        @extend %flex;
         flex-wrap: wrap;
-        justify-content: center;
         img{
             width: 300px;
             height: 300px;
